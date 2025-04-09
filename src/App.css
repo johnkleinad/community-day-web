@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pink-cd-100: #E5157C;
+  --color-pink-cd-200: #7F0C45;
+
+  --color-orange-cd-100: #F79820;
+  --color-orange-cd-200: #915913;
+
+  --color-green-cd-100: #00A88C;
+  --color-green-cd-200: #004237;
+
+  --color-cyan-cd-100: #32ACB2;
+  --color-cyan-cd-200: #056F87;
+
+  --color-purple-cd-100: #725FA8;
+  --color-purple-cd-200: #2D2542;
+
+  --color-blue-cd-100: #3B5FA2;
+  --color-blue-cd-200: #16233C;
+
+  --font-display: "Amazon Ember", "sans-serif"; 
+}
