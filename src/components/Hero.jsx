@@ -2,7 +2,10 @@ import React from 'react'
 
 export default function Hero() {
     return <div className='mx-auto container pt-16'>
-        <div className='h-full grid grid-rows-2 gap-8'>
+        <div className="absolute opacity-10 left-0">
+            <img src="/img/pattern.png" alt="" />
+        </div>
+        <div className='h-full grid grid-rows-2 gap-8 sticky'>
             <div className="flex flex-col gap-8 justify-end">
                 <h1 className='text-6xl xl:text-8xl font-black'>AWS Community day <br />
                     <span className='text-orange-cd-100 font-light'>México 2025</span>
