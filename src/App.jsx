@@ -19,7 +19,7 @@ function App() {
         <Hero />
         <InfoSection />
         <CallForSpeakers />
-        <Map />
+        {/* <Map /> */}
         <Sponsors />
         <AllyCommunity />
         <Team />
