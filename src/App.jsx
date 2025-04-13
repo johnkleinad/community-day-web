@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main className='flex flex-col gap-16'>
+      <main className='flex flex-col gap-16 overflow-x-hidden w-full'>
         <Hero />
         <InfoSection />
         <CallForSpeakers />
