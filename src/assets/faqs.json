@@ -1,0 +1,42 @@
+[
+    {
+        "question": "¿Qué es el AWS Community Day?",
+        "answer": "Es un evento gratuito organizado por la comunidad de AWS en México. Está diseñado para reunir a profesionales, desarrolladores, builders y otros interesados en AWS para compartir experiencias, conocimientos y mejores prácticas en el uso de los servicios de AWS."
+    },
+    {
+        "question": "¿Cuándo y dónde se llevará a cabo el evento?",
+        "answer": "La edición 2025 se llevará a cabo el sábado 14 de junio de 2025 en la Ciudad de México."
+    },
+    {
+        "question": "¿Cómo puedo registrarme para el evento?",
+        "answer": "Deberás dar clic en el botón 'REGISTRO' y llenar tus datos en la plataforma Eventbrite."
+    },
+    {
+        "question": "¿Habrá talleres o laboratorios prácticos?",
+        "answer": "Sí, en el AWS Community Day México 2024 no solo se ofrecerán charlas técnicas, también se ofrecerán talleres (workshops) prácticos, demostraciones y oportunidades de networking."
+    },
+    {
+        "question": "¿Hay oportunidades de patrocinio disponibles?",
+        "answer": "Sí, hay diferentes niveles de patrocinio disponibles. Puedes contactarnos a sponsors@awscommunity.mx para más detalles."
+    },
+    {
+        "question": "¿Hay oportunidades para voluntarios?",
+        "answer": "¡Por supuesto! Estamos buscando voluntarios apasionados y comprometidos para asegurarse de que el evento sea un éxito. Puedes contactarnos por nuestras redes sociales para obtener más información."
+    },
+    {
+        "question": "¿Se proporcionarán cupones (vouchers) de certificación?",
+        "answer": "Tendremos dinámicas en las cuales podrás participar para ganar créditos de AWS, vouchers de certificación y dispositivos Alexa."
+    },
+    {
+        "question": "¿Habrá oportunidades de networking?",
+        "answer": "¡Claro!, El evento está diseñado para ofrecer amplias oportunidades de networking entre profesionales de la industria, empresas y expertos en AWS."
+    },
+    {
+        "question": "¿Cuál es la duración del evento?",
+        "answer": "El evento abrirá sus puertas a las 8:00hrs y terminará a las 18:00hrs. Puedes esperar un día lleno de aprendizaje, conexiones y mucha, pero mucha nube. Ofreceremos servicio de bebidas y almuerzo a lo largo del día."
+    },
+    {
+        "question": "¿Se grabarán las sesiones?",
+        "answer": "La sesión principal (keynote) será transmitida en vivo y grabada, pero el resto de las sesiones y talleres no. ¡Te invitamos a sumarte de manera presencial para no perderte ningún contenido de alto valor!"
+    }
+]
