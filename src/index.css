@@ -67,6 +67,9 @@ body {
   background-size: cover;
   margin: 0;
 }
+h1{
+  font-size: clamp(34px, 4vw, 92px);
+}
 .main-gradient {
   background: linear-gradient(45deg, #361a49, #16233c, #173860);
 }
@@ -109,4 +112,47 @@ body {
 .text-gradient.orange {
   background: linear-gradient(90deg, #f79820, #915913);
   -webkit-background-clip: text;
+}
+
+/* Contenedor base */
+.toggle-cross {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Estado inicial: Cruz (como un símbolo de suma: +) */
+.toggle-cross::before,
+.toggle-cross::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #ffffff; /* Color del botón */
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.toggle-cross::before {
+  /* Línea horizontal */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.toggle-cross::after {
+  /* Línea vertical */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+/* Estado activo: Equis (X) */
+.toggle-cross.is-active::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.toggle-cross.is-active::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
