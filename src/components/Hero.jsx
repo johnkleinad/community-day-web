@@ -1,9 +1,17 @@
 import React from 'react'
+import Carrusel from './Carrusel'
+
+const arr = new Array(10).fill(0);
 
 export default function Hero() {
     return <div className='mx-auto container pt-16'>
-        <div className="absolute opacity-10 left-0">
-            <img src="/img/pattern.png" alt="" />
+        <div className="absolute opacity-10 left-0 top-[68px]" >
+            <Carrusel
+                baseVelocity={10}>
+                {arr.map((_, index) => (
+                    <img key={index} src="/img/Pattern.svg" className='inline-block' alt="" />
+                ))}
+            </Carrusel>
         </div>
         <div className='h-full grid grid-rows-2 gap-8 sticky'>
             <div className="flex flex-col gap-8 justify-end">
