@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Navbar() {
     return <>
-        <nav className='w-full h-[68px] bg-gradient from-transparent to-[#173860] sticky top-0 backdrop-blur-md'>
+        <nav className='w-full h-[68px] bg-gradient from-transparent to-[#173860] sticky top-0 backdrop-blur-md z-10'>
             <div className="h-full bg-gradient-to-b from-[#000]/50 to-transparent w-full">
                 <div className="flex justify-between items-center h-full mx-auto container">
                     <div className='text-xl font-bold'>
