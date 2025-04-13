@@ -10,13 +10,14 @@ import Team from './components/Team'
 import Faq from './components/Faq'
 import ContactUs from './components/ContactUs'
 import Footrer from './components/Footrer'
+import Parralax from './components/Parralax'
 
 function App() {
   return (
     <>
       <Navbar />
-      <main className='flex flex-col gap-16 overflow-x-hidden w-full'>
-        <Hero />
+      <Hero />
+      <Parralax>
         <InfoSection />
         <CallForSpeakers />
         {/* <Map /> */}
@@ -25,7 +26,7 @@ function App() {
         <Team />
         <Faq />
         <ContactUs />
-      </main>
+      </Parralax>
       <Footrer />
     </>
   )
