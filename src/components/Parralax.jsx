@@ -18,22 +18,17 @@ function shuffle(array) {
 export default function Parralax({ children }) {
     const { scrollY } = useViewportScroll();
     const mainRef = useRef(null);
-    const [siteHeight, setSiteHeight] = useState(1000); // Valor por defecto
+    const [siteHeight, setSiteHeight] = useState(1000); 
 
-    // Mide la altura total del contenedor principal
     useLayoutEffect(() => {
         if (mainRef.current) {
             setSiteHeight(mainRef.current.scrollHeight);
         }
     }, [mainRef]);
-
-    // Ahora definimos las transformaciones basándonos en siteHeight:
-    // Los iconos chicos se desplazan 20% del alto del sitio, los medianos 12%, los grandes 5%.
     const smallY = useTransform(scrollY, [0, siteHeight], [0, siteHeight * 0.6]);
     const mediumY = useTransform(scrollY, [0, siteHeight], [0, siteHeight * 0.32]);
     const largeY = useTransform(scrollY, [0, siteHeight], [0, siteHeight * 0.1]);
 
-    // Arreglo de posiciones fijas para 40 iconos, con "top" entre 7% y 89%
     const staticPositions = [
         { top: '7%', left: '3%' },
         { top: '9%', right: '5%' },
@@ -79,23 +74,20 @@ export default function Parralax({ children }) {
         { top: '89%', right: '15%' }
     ];
 
-    // Seleccionamos 40 iconos aleatorios cada recarga
     const selectedIcons = shuffle([...iconsList]).slice(0, 40);
-
-    // Mapeamos cada posición para generar un icono con su respectivo efecto parallax
     const elements = staticPositions.map((pos, i) => {
         const icon = selectedIcons[i];
         if (!icon) return null;
         let sizeClass = "";
         let parallaxTransform;
         if (i % 3 === 0) {
-            sizeClass = "w-8";       // Grupo chico
+            sizeClass = "w-8";       
             parallaxTransform = smallY;
         } else if (i % 3 === 1) {
-            sizeClass = "w-10";      // Grupo mediano
+            sizeClass = "w-10";   
             parallaxTransform = mediumY;
         } else {
-            sizeClass = "w-16";      // Grupo grande
+            sizeClass = "w-16";     
             parallaxTransform = largeY;
         }
         return (
