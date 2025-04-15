@@ -8,7 +8,7 @@ export default function Navbar() {
             <div className="h-full bg-gradient-to-b from-[#000]/50 to-transparent w-full">
                 <div className="flex justify-between items-center h-full mx-auto container">
                     <div className='text-xl font-bold w-full flex justify-center md:justify-start'>
-                        <img src="/img/logo.svg" className='h-8 md:h-full' alt="logo" />
+                        <img src="/img/logo.svg" className='h-8 md:h-13' alt="logo" />
                     </div>
                     {width >= 780
                         &&
