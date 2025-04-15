@@ -34,8 +34,8 @@ export default function Gallery() {
 
 const GalleryCard = ({ photos, path, year, location, video }) => {
     return <div>
-        <div className='mx-auto container rounded-2xl p-4 sticky top-[68px]'>
-            <div className='flex justify-between items-center md:p-4  md:text-4xl font-bold bg-white/-sm'>
+        <div className='mx-auto container rounded-2xl p-4 sticky top-[68px] z-10'>
+            <div className='flex justify-between items-center md:p-4 md:text-4xl font-bold bg-white/-sm sticky'>
                 <span>{year}</span>
                 <div className='absolute h-full w-full flex justify-center items-center'>
                     <img src="/img/logo.svg" alt="community-day-logo" className='w-[0px]' />
@@ -43,7 +43,7 @@ const GalleryCard = ({ photos, path, year, location, video }) => {
                 <span>{location}</span>
             </div>
         </div>
-        <div className='flex flex-col gap-8 max-w-[1080px] mx-auto'>
+        <div className='flex flex-col gap-8 max-w-[1080px] mx-auto -z-10'>
             <div className="relative w-full pb-[56.25%]">
                 <iframe
                     className="absolute top-0 left-0 w-full h-full"
