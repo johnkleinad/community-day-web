@@ -67,16 +67,28 @@ body {
   background-size: cover;
   margin: 0;
 }
-h1{
-  font-size: clamp(34px, 4vw, 92px);
+h1 {
+  font-size: clamp(54px, 4vw, 92px);
 }
+h2, h3 {
+  font-size: clamp(28px, 4vw, 48px);
+}
+p{
+  font-size: clamp(12px, 4vw, 20px)!important;
+  font-weight: 300;
+}
+
 .main-gradient {
   background: linear-gradient(45deg, #361a49, #16233c, #173860);
 }
 .sec-gradient {
-  background: linear-gradient(90deg, #D507E6, #314DD9, #1088D9);
+  background: linear-gradient(90deg, #d507e6, #314dd9, #1088d9);
 }
-
+.multishadow {
+  box-shadow: -10px -12px 50px 0 rgba(114, 95, 168, 0.25);
+  box-shadow: 10px 12px 50px 0 rgba(22, 35, 60, 0.25);
+  box-shadow: 0 0 50px 0 rgba(229, 21, 125, 0.25);
+}
 .gradient-border {
   position: relative;
   border-radius: 999px;

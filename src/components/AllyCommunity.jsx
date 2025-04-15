@@ -4,7 +4,7 @@ import Title from './Title'
 
 export default function AllyCommunity() {
     return <>
-        <div className='flex flex-col gap-16 mx-auto container'>
+        <div className='flex flex-col gap-16 mx-auto container px-4'>
             <Title
                 span={'Conoce al equipo que hace posible este evento'}
                 title={'Comunidades aliadas'}

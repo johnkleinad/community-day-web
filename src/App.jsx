@@ -11,6 +11,7 @@ import Faq from './components/Faq'
 import ContactUs from './components/ContactUs'
 import Footrer from './components/Footrer'
 import Parralax from './components/Parralax'
+import Gallery from './components/Gallery'
 
 function App() {
   return (
@@ -24,9 +25,10 @@ function App() {
         <Sponsors />
         <AllyCommunity />
         <Team />
-        <Faq />
-        <ContactUs />
       </Parralax>
+      <Gallery />
+      <Faq />
+      <ContactUs />
       <Footrer />
     </>
   )

@@ -2,7 +2,6 @@ import React, { useState, useRef, useLayoutEffect } from 'react'
 import { motion, useViewportScroll, useTransform } from 'framer-motion'
 import iconsList from '../assets/icons.json'
 
-// Función de shuffle para mezclar la lista de iconos
 function shuffle(array) {
     let currentIndex = array.length, temporaryValue, randomIndex;
     while (currentIndex !== 0) {
@@ -18,7 +17,7 @@ function shuffle(array) {
 export default function Parralax({ children }) {
     const { scrollY } = useViewportScroll();
     const mainRef = useRef(null);
-    const [siteHeight, setSiteHeight] = useState(1000); 
+    const [siteHeight, setSiteHeight] = useState(1000);
 
     useLayoutEffect(() => {
         if (mainRef.current) {
@@ -30,7 +29,7 @@ export default function Parralax({ children }) {
     const largeY = useTransform(scrollY, [0, siteHeight], [0, siteHeight * 0.1]);
 
     const staticPositions = [
-        { top: '7%', left: '3%' },
+        { top: '7%', left: '6%' },
         { top: '9%', right: '5%' },
         { top: '11%', left: '10%' },
         { top: '13%', right: '8%' },
@@ -40,10 +39,10 @@ export default function Parralax({ children }) {
         { top: '21%', right: '20%' },
         { top: '23%', left: '15%' },
         { top: '25%', right: '5%' },
-        { top: '27%', left: '3%' },
+        { top: '27%', left: '6%' },
         { top: '29%', right: '8%' },
         { top: '31%', left: '10%' },
-        { top: '33%', right: '3%' },
+        { top: '33%', right: '6%' },
         { top: '35%', left: '12%' },
         { top: '37%', right: '25%' },
         { top: '39%', left: '8%' },
@@ -60,10 +59,10 @@ export default function Parralax({ children }) {
         { top: '61%', right: '10%' },
         { top: '63%', left: '12%' },
         { top: '65%', right: '5%' },
-        { top: '67%', left: '3%' },
+        { top: '67%', left: '6%' },
         { top: '69%', right: '8%' },
         { top: '71%', left: '10%' },
-        { top: '73%', right: '3%' },
+        { top: '73%', right: '6%' },
         { top: '75%', left: '12%' },
         { top: '77%', right: '25%' },
         { top: '79%', left: '8%' },
@@ -81,13 +80,13 @@ export default function Parralax({ children }) {
         let sizeClass = "";
         let parallaxTransform;
         if (i % 3 === 0) {
-            sizeClass = "w-8";       
+            sizeClass = "w-8";
             parallaxTransform = smallY;
         } else if (i % 3 === 1) {
-            sizeClass = "w-10";   
+            sizeClass = "w-10";
             parallaxTransform = mediumY;
         } else {
-            sizeClass = "w-16";     
+            sizeClass = "w-16";
             parallaxTransform = largeY;
         }
         return (
@@ -112,8 +111,10 @@ export default function Parralax({ children }) {
 
     return (
         <>
-            <main ref={mainRef} className="flex flex-col gap-16 relative w-full overflow-hidden">
-                {elements}
+            <main ref={mainRef} className="flex flex-col gap-8 md:gap-16 relative overflow-hidden w-full">
+                <div>
+                    {elements}
+                </div>
                 {children}
             </main>
         </>

@@ -20,8 +20,8 @@ export default function Faq() {
     <div key={idx} className="px-4 mb-8">
       <div className="faq-card">
         <div className="main-gradient rounded-lg">
-          <button onClick={() => toggleFAQ(idx)} className="flex justify-between items-center h-20 w-full cursor-pointer p-4">
-            <h3 className="text-xl">{faq.question}</h3>
+          <button onClick={() => toggleFAQ(idx)} className="flex justify-between items-center h-16 md:h-20 w-full cursor-pointer p-4">
+            <span className="text-sm md:text-xl text-left">{faq.question}</span>
             <div className={`toggle-cross rounded-full bg-gradient-to-b ${gradients[idx % gradients.length]} p-5 ${openFAQ === idx ? 'is-active' : ''}`} />
           </button>
         </div>
@@ -46,9 +46,9 @@ export default function Faq() {
   return (
     <div>
       <BoxShadow>
-        <div className="flex flex-col gap-16 mx-auto container min-h-[850px]">
+        <div className="flex flex-col gap-16 mx-auto container px-4 min-h-[850px]">
           <Title span="Consulta nuestras" title="Preguntas frecuentes" />
-          <div className="flex flex-col md:flex-row gap-8">
+          <div className="flex flex-col md:flex-row md:gap-8">
             <div className="w-full md:w-1/2">{faqs.slice(0, mid).map((f, i) => renderFAQ(f, i))}</div>
             <div className="w-full md:w-1/2">{faqs.slice(mid).map((f, i) => renderFAQ(f, i + mid))}</div>
           </div>

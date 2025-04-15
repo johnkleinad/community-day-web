@@ -4,13 +4,13 @@ import MainButton from './MainButton'
 
 export default function ContactUs() {
     return <>
-        <div className='flex flex-col gap-16 mx-auto container'>
+        <div className='flex flex-col gap-16 mx-auto container px-4'>
             <Title
                 span={'Cualquier cosa que nos quieras decir...'}
                 title={'¡Entremos en contacto!'}
             />
             <p className='text-2xl font-light'>¡Nos encantará saber de ti! Llámanos, envíanos un WhatsApp o un correo electrónico. Nos comunicaremos contigo tan pronto como sea posible.</p>
-            <div className='flex gap-4'>
+            <div className='flex flex-col md:flex-row gap-4'>
                 <MainButton
                     placeholder={'day@awscommunity.mx'}
                 />
