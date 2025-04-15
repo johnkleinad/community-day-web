@@ -22,7 +22,7 @@ export default function InfoSection() {
         >
           <Title
             span="Aspectos más destacados del evento"
-            title="Descubre lo que hemos preparado para ti."
+            title="Descubre lo que hemos preparado para ti"
           />
           <p className='text-center text-2xl font-light'>
             El <strong>AWS Community Day México</strong> es un evento gratuito que reúne a profesionales, estudiantes y entusiastas de la tecnología interesados en aprender sobre servicios de AWS. Ofrece charlas técnicas, talleres prácticos y oportunidades para hacer networking con expertos del sector. Los asistentes pueden actualizarse sobre tendencias en la nube, adquirir nuevas habilidades en temas como DevOps, arquitectura cloud, inteligencia artificial y seguridad, además de conectar con una comunidad diversa y colaborativa.
