@@ -1,5 +1,5 @@
 import React from 'react'
-import UseWindowSize from '../hooks/useWindowSize';
+import UseWindowSize from '../hooks/UseWindowSize';
 
 export default function Navbar() {
     const { width } = UseWindowSize();
