@@ -1,6 +1,6 @@
 import React from 'react'
 import Carrusel from './Carrusel'
-import UseWindowSize from '../hooks/useWindowSize';
+import UseWindowSize from '../hooks/UseWindowSize';
 import MainButton from './MainButton';
 
 const arr = new Array(30).fill(0);
