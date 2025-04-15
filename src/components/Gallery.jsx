@@ -24,6 +24,9 @@ export default function Gallery() {
                 path={'mty'}
                 year={'2023'}
                 location={'Monterrey'}
+                video={'https://www.youtube.com/embed/cC_0YsGO5Z4?si=8SGJQVTEbJz-tDyy'}
+            />
+            <Title
             />
         </div>
     </>
@@ -41,17 +44,17 @@ const GalleryCard = ({ photos, path, year, location, video }) => {
             </div>
         </div>
         <div className='flex flex-col gap-8 max-w-[1080px] mx-auto'>
-            {/* <VideoOnVisible src="https://youtu.be/JaYOFUkmOfw?si=dhMaGKvaDBBGDjxI" className='rounded-2xl' /> */}
-            <iframe
-                width="560"
-                height="315"
-                src={video}
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-            />
+            <div className="relative w-full pb-[56.25%]">
+                <iframe
+                    className="absolute top-0 left-0 w-full h-full"
+                    src={video}
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                />
+            </div>
             <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
                 {
                     photos.map((photo, index) => (
@@ -67,34 +70,3 @@ const GalleryCard = ({ photos, path, year, location, video }) => {
         </div>
     </div>
 }
-
-const VideoOnVisible = ({ src, className }) => {
-    const videoRef = useRef(null);
-
-    useEffect(() => {
-        const video = videoRef.current;
-        if (video) {
-            video.volume = 0.3;
-        }
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    video.play();
-                } else {
-                    video.pause();
-                }
-            },
-            { threshold: 0.5 }
-        );
-        if (video) {
-            observer.observe(video);
-        }
-        return () => {
-            if (video) {
-                observer.unobserve(video);
-            }
-        };
-    }, []);
-
-    return <video ref={videoRef} src={src} className={className} loop />;
-};
