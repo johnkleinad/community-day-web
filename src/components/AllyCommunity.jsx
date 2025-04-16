@@ -12,7 +12,7 @@ export default function AllyCommunity() {
             <p className='text-2xl font-light'>¿Te gustaría ser parte de las comunidades aliadas?</p>
             <a href="mailto:partnership@awscommunity.mx">
                 <MainButton
-                    placeholder={'Únete'}
+                    placeholder={'Contáctanos'}
                 />
             </a>
         </div>

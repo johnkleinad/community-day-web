@@ -6,7 +6,7 @@ export default function Sponsors() {
         <div className="bg-[url(/img/pattern.png)] absolute inset-0 opacity-5 z-20" />
         <div className='mx-auto container px-4 h-full'>
             <Title
-                span={'Todo esto es posible'}
+                span={'Todo esto es posible gracias a”'}
                 title={'Nuestros patrocinadores'}
             />
             <div className='flex justify-center items-center h-full'>
