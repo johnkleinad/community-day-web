@@ -4,7 +4,7 @@ import MainButton from './MainButton'
 
 export default function ContactUs() {
     return <>
-        <div className='flex flex-col gap-16 mx-auto container px-4'>
+        <div className='flex flex-col gap-8 md:gap-16 mx-auto container px-4'>
             <Title
                 span={'Cualquier cosa que nos quieras decir...'}
                 title={'¡Entremos en contacto!'}

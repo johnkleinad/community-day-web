@@ -40,7 +40,7 @@ export default function Hero() {
                         aprendizaje y conexión.
                     </h2>
                     <p>
-                        Desde ponencias inspiradoras hasta sesiones interactivas y oportunidades para expandir tu red profesional, el <span className='font-bold'>AWS Community Day 2025</span> será un evento único que transformará tu carrera. ¡Este es nuestro tercer año, y estamos más emocionados que nunca de compartirlo contigo! La inscripción abre próximamente. Suscríbete para estar al tanto de todas las novedades.
+                        Desde ponencias inspiradoras hasta sesiones interactivas y oportunidades para expandir tu red profesional, el <span className='font-bold'>AWS Community Day 2025</span> será un evento único que transformará tu carrera. <span className='font-bold'>¡Este es nuestro tercer año, y estamos más emocionados que nunca de compartirlo contigo! </span>
                     </p>
                 </div>
                 <a target='_blank' href="https://www.eventbrite.com.mx/e/aws-community-day-mexico-2025-registration-1263605089839?aff=oddtdtcreator">

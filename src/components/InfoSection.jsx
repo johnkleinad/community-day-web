@@ -36,7 +36,7 @@ export default function InfoSection() {
             >
               <Cards
                 img={'image-one'}
-                title={'Conoce a los líderes del futuro'}
+                title={'Conoce a los líderes del futuro.'}
                 text={'El AWS Community Day te trae charlas, talleres y demostraciones exclusivas, impartidas por expertos de AWS y referentes de la industria en Latinoamérica. Vive experiencias únicas, explora casos de éxito reales y descubre las soluciones más innovadoras que están redefiniendo el panorama digital de hoy'}
               />
             </motion.div>
@@ -50,7 +50,7 @@ export default function InfoSection() {
                 <Cards
                   reverse
                   img={'image-two'}
-                  title={'Conexiones que impulsan tu carrera'}
+                  title={'Conexiones que impulsan tu carrera.'}
                   text={'El AWS Community Day es la oportunidad perfecta para conectar con profesionales afines, intercambiar experiencias, y abordar juntos los desafíos más relevantes. Saldrás no solo con nuevos aprendizajes, sino con contactos clave que podrían transformar tu futuro profesional'}
                 />
               </div>
@@ -63,7 +63,7 @@ export default function InfoSection() {
             >
               <Cards
                 img={'image-thre'}
-                title={'Siempre a la vanguardia'}
+                title={'Siempre a la vanguardia.'}
                 text={'En AWS Community Day estarás al tanto de las últimas tendencias y avances del ecosistema AWS. Este evento te coloca en el epicentro de la innovación, preparándote para enfrentar los retos del mañana y aprovechar las oportunidades que surgen en el acelerado mundo de la nube.'}
               />
             </motion.div>
