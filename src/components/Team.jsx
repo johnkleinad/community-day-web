@@ -6,7 +6,7 @@ export default function Team() {
     const { ug } = team;
 
     return <>
-        <div className='flex flex-col gap-8 md:gap-16 mx-auto container px-4'>
+        <div className='flex flex-col gap-16 mx-auto container px-4'>
             <Title
                 span={'Conoce al equipo que hace posible este evento'}
                 title={'Equipo organizador'}

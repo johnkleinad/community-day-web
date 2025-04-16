@@ -18,7 +18,7 @@ export default function InfoSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: false }}
-          className='flex flex-col gap-8 md:gap-8 md:gap-16 mx-auto container px-4'
+          className='flex flex-col gap-8 md:gap-16 mx-auto container px-4'
         >
           <Title
             span="Aspectos más destacados del evento"

@@ -46,7 +46,7 @@ export default function Faq() {
   return (
     <div>
       <BoxShadow>
-        <div className="flex flex-col gap-8 md:gap-16 mx-auto container px-4 min-h-[850px]">
+        <div className="flex flex-col gap-16 mx-auto container px-4 min-h-[850px]">
           <Title span="Consulta nuestras" title="Preguntas frecuentes" />
           <div className="flex flex-col md:flex-row md:gap-8">
             <div className="w-full md:w-1/2">{faqs.slice(0, mid).map((f, i) => renderFAQ(f, i))}</div>
