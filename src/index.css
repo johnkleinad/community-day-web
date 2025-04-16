@@ -68,11 +68,11 @@ body {
   margin: 0;
 }
 h1 {
-  font-size: clamp(49px, 4vw, 92px);
+  font-size: clamp(44px, 4vw, 92px);
 }
 h2,
 h3 {
-  font-size: clamp(38px, 4vw, 48px);
+  font-size: clamp(32px, 4vw, 48px);
 }
 p {
   font-size: clamp(12px, 4vw, 20px) !important;

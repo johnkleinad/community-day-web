@@ -18,9 +18,9 @@ export default function Hero() {
             </Carrusel>
         </div>
 
-        <div className='md:h-full grid grid-rows-2 gap-8'>
-            <div className="flex flex-col gap-8 justify-end">
-                <h1 className='text-6xl xl:text-8xl font-black uppercase leading-14 md:leading-24'>AWS Community Day <br />
+        <div className='md:h-full grid grid-rows-2 gap-8 md:pt-0'>
+            <div className="flex flex-col gap-8 justify-end h-full">
+                <h1 className='text-6xl xl:text-8xl font-black'>AWS Community Day <br />
                     <span className='text-orange-cd-100 font-light'>México 2025</span>
                 </h1>
                 <div className='font-light text-xl divide-x flex gap-7 h-11 items-center'>
