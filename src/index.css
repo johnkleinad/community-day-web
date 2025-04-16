@@ -61,6 +61,13 @@
   font-family: "Amazon Ember", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+#sponsors,
+#callForSpeakers {
+  scroll-margin-top: 80px;
+}
 body {
   background: linear-gradient(45deg, #361a49, #16233c, #173860);
   background-attachment: fixed;

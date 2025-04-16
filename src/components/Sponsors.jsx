@@ -2,7 +2,7 @@ import React from 'react'
 import Title from './Title'
 
 export default function Sponsors() {
-    return <div className='relative h-[49.4vh] z-10 backdrop-blr-xs'>
+    return <div id='sponsors' className='relative h-[49.4vh] z-10 backdrop-blr-xs'>
         <div className="bg-[url(/img/pattern.png)] absolute inset-0 opacity-5 z-20" />
         <div className='mx-auto container px-4 h-full'>
             <Title

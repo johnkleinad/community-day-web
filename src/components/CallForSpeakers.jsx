@@ -4,7 +4,7 @@ import MainButton from './MainButton'
 import frameImage from '../assets/marco.png';
 
 export default function CallForSpeakers() {
-    return <div className='flex flex-col gap-8 md:gap-16 mx-auto container px-4'>
+    return <div className='flex flex-col gap-8 md:gap-16 mx-auto container px-4' id='callForSpeakers'>
         <Title
             span={'Sé parte para esta edición'}
             title={'Apúntate como ponente'}

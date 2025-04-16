@@ -44,7 +44,7 @@ export default function Faq() {
     </div>
   );
   return (
-    <div>
+    <div id='faqs'>
       <BoxShadow>
         <div className="flex flex-col gap-8 md:gap-16 mx-auto container px-4 min-h-[850px]">
           <Title span="Consulta nuestras" title="Preguntas frecuentes" />
