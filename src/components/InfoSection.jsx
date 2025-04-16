@@ -64,7 +64,7 @@ export default function InfoSection() {
               <Cards
                 img={'image-thre'}
                 title={'Siempre a la vanguardia'}
-                text={'El AWS Community Day es la oportunidad perfecta para conectar con profesionales afines, intercambiar experiencias, y abordar juntos los desafíos más relevantes. Saldrás no solo con nuevos aprendizajes, sino con contactos clave que podrían transformar tu futuro profesional'}
+                text={'En AWS Community Day estarás al tanto de las últimas tendencias y avances del ecosistema AWS. Este evento te coloca en el epicentro de la innovación, preparándote para enfrentar los retos del mañana y aprovechar las oportunidades que surgen en el acelerado mundo de la nube.'}
               />
             </motion.div>
           </div>
