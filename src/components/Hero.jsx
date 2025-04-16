@@ -19,7 +19,7 @@ export default function Hero() {
         </div>
         <div className='h-screen md:h-full grid grid-rows-2 gap-8'>
             <div className="flex flex-col gap-8 justify-end">
-                <h1 className='text-6xl xl:text-8xl font-black'>AWS Community Day <br />
+                <h1 className='text-6xl xl:text-8xl font-black uppercase leading-14 md:leading-24'>AWS Community Day <br />
                     <span className='text-orange-cd-100 font-light'>México 2025</span>
                 </h1>
                 <div className='font-light text-xl divide-x flex gap-7 h-11 items-center'>
@@ -27,9 +27,10 @@ export default function Hero() {
                     <span>Ciudad de México, México</span>
                 </div>
                 <div className='font-light text-xl'>
-                    {/* <span>Orgullosamente presentado por:</span>
-                    <div className="h-10">
-                    </div> */}
+                    <span>Orgullosamente presentado por:</span>
+                    <div className="h-16 flex items-center">
+                        <img src="/sponsors/aws.png" className='h-full' alt="" />
+                    </div>
                 </div>
             </div>
             <div className='flex flex-col gap-8 justify-start'>
