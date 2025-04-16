@@ -1,9 +1,10 @@
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import frameImage from '../assets/marco.png';
+import MainButton from '../components/MainButton';
 
-const FRAME_SIZE = 400;     
-const INNER_SIZE = 270;     
+const FRAME_SIZE = 400;
+const INNER_SIZE = 270;
 const RING_THICKNESS = (FRAME_SIZE - INNER_SIZE) / 2;
 
 export default function ProfileMaker() {
@@ -93,15 +94,15 @@ export default function ProfileMaker() {
     };
 
     return (
-        <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-            <h1>Generador de Imagen de Perfil</h1>
-
-            <input type="file" accept="image/*" onChange={handleFileChange} />
-
+        <div className='flex flex-col justify-center items-center h-[96vh] gap-4'>
+            <div className='px-4 flex flex-col text-center'>
+                <span className='text-4xl font-black'>Únete a la fiesta</span>
+                <span className='text-3xl font-light'>Carga una imagen y descarga tu foto de perfil</span>
+            </div>
             <div
                 ref={frameRef}
+                className='relative rounded-[20px] overflow-hidden shadow-pink-cd-100/20 shadow-2xl'
                 style={{
-                    position: 'relative',
                     width: FRAME_SIZE + 'px',
                     height: FRAME_SIZE + 'px',
                     margin: '1rem auto',
@@ -156,12 +157,19 @@ export default function ProfileMaker() {
                     }}
                 />
             </div>
-
-            {imageURL && (
-                <button onClick={downloadImage} style={{ marginTop: '1rem' }}>
-                    Descargar Imagen
-                </button>
-            )}
+            <div className='flex flex-col mt-8'>
+                <div>
+                    <input id='fileImage' name='fileImage' className='hidden' type="file" accept="image/*" onChange={handleFileChange} />
+                    <label className='bg-gradient-to-r from-pink-cd-100 to-orange-cd-100 rounded-full px-8 py-4 text-xl font-bold' htmlFor="fileImage">
+                        Carga una imagen
+                    </label>
+                </div>
+                {imageURL && (
+                    <button className='bg-gradient-to-r from-pink-cd-100 to-orange-cd-100 rounded-full px-8 py-4 text-xl font-bold mt-8' onClick={downloadImage}>
+                        Descargar Imagen
+                    </button>
+                )}
+            </div>
         </div>
     );
 }
