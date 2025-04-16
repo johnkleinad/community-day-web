@@ -68,7 +68,7 @@ body {
   margin: 0;
 }
 h1 {
-  font-size: clamp(44px, 4vw, 92px);
+  font-size: clamp(44px, 7vw, 92px);
 }
 h2,
 h3 {
