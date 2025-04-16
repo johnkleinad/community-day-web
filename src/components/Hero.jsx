@@ -17,7 +17,8 @@ export default function Hero() {
                 ))}
             </Carrusel>
         </div>
-        <div className='h-screen md:h-full grid grid-rows-2 gap-8'>
+
+        <div className='md:h-full grid grid-rows-2 gap-8'>
             <div className="flex flex-col gap-8 justify-end">
                 <h1 className='text-6xl xl:text-8xl font-black uppercase leading-14 md:leading-24'>AWS Community Day <br />
                     <span className='text-orange-cd-100 font-light'>México 2025</span>
@@ -38,8 +39,8 @@ export default function Hero() {
                     <h2 className='text-5xl font-black'>Un día inolvidable de <br />
                         aprendizaje y conexión.
                     </h2>
-                    <p className='text-justify'>
-                        Desde ponencias inspiradoras hasta sesiones interactivas y oportunidades para expandir tu red profesional, el <span className='font-semibold'>AWS Community Day 2025</span> será un evento único que transformará tu carrera. ¡Este es nuestro tercer año, y estamos más emocionados que nunca de compartirlo contigo! La inscripción abre próximamente. Suscríbete para estar al tanto de todas las novedades.
+                    <p>
+                        Desde ponencias inspiradoras hasta sesiones interactivas y oportunidades para expandir tu red profesional, el <span className='font-bold'>AWS Community Day 2025</span> será un evento único que transformará tu carrera. ¡Este es nuestro tercer año, y estamos más emocionados que nunca de compartirlo contigo! La inscripción abre próximamente. Suscríbete para estar al tanto de todas las novedades.
                     </p>
                 </div>
                 <a target='_blank' href="https://www.eventbrite.com.mx/e/aws-community-day-mexico-2025-registration-1263605089839?aff=oddtdtcreator">

@@ -7,7 +7,7 @@ export default function Gallery() {
     const { photos: gdl } = photosGdl
     const { photos: mty } = photosMty
     return <>
-        <div className='mx-auto container px-4 flex flex-col gap-8 md:gap-16 relative'>
+        <div className='mx-auto container px-4 flex flex-col gap-8 md:gap-8 md:gap-16 relative'>
             <Title
                 span={'Una mirada al pasado'}
                 title={'Revive las ediciones anteriores'}
