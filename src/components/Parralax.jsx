@@ -111,7 +111,7 @@ export default function Parralax({ children }) {
 
     return (
         <>
-            <main ref={mainRef} className="flex flex-col gap-8 md:gap-16 relative overflow-hidden w-full">
+            <main ref={mainRef} className="flex flex-col gap-8 md:gap-16 relative overflow-hidden w-full pb-8 md:pb-20">
                 <div>
                     {elements}
                 </div>
