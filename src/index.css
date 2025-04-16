@@ -3,56 +3,56 @@
 }
 @font-face {
   font-family: "Amazon Ember";
-  src: url("/src/assets/fonts/AmazonEmber-Thin.ttf") format("truetype");
+  src: url("/src/assets/fonts/AmazonEmber-Thin.woff2") format("woff2");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Amazon Ember";
-  src: url("/src/assets/fonts/AmazonEmber-Light.ttf") format("truetype");
+  src: url("/src/assets/fonts/AmazonEmber-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Amazon Ember";
-  src: url("/src/assets/fonts/AmazonEmber-Regular.ttf") format("truetype");
+  src: url("/src/assets/fonts/AmazonEmber-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Amazon Ember";
-  src: url("/src/assets/fonts/AmazonEmber-Medium.ttf") format("truetype");
+  src: url("/src/assets/fonts/AmazonEmber-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Amazon Ember";
-  src: url("/src/assets/fonts/AmazonEmber-Bold.ttf") format("truetype");
+  src: url("/src/assets/fonts/AmazonEmber-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Amazon Ember";
-  src: url("/src/assets/fonts/AmazonEmber-Heavy.ttf") format("truetype");
+  src: url("/src/assets/fonts/AmazonEmber-Heavy.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Amazon Ember";
-  src: url("/src/assets/fonts/AmazonEmber-Display.ttf") format("truetype");
+  src: url("/src/assets/fonts/AmazonEmber-Display.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Amazon Ember";
-  src: url("/src/assets/fonts/AmazonEmber-Italic.ttf") format("truetype");
+  src: url("/src/assets/fonts/AmazonEmber-Italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
 }
@@ -70,11 +70,12 @@ body {
 h1 {
   font-size: clamp(54px, 4vw, 92px);
 }
-h2, h3 {
-  font-size: clamp(28px, 4vw, 48px);
+h2,
+h3 {
+  font-size: clamp(38px, 4vw, 48px);
 }
-p{
-  font-size: clamp(12px, 4vw, 20px)!important;
+p {
+  font-size: clamp(12px, 4vw, 20px) !important;
   font-weight: 300;
 }
 
@@ -126,7 +127,6 @@ p{
   -webkit-background-clip: text;
 }
 
-/* Contenedor base */
 .toggle-cross {
   width: 30px;
   height: 30px;
@@ -134,37 +134,39 @@ p{
   cursor: pointer;
 }
 
-/* Estado inicial: Cruz (como un símbolo de suma: +) */
 .toggle-cross::before,
 .toggle-cross::after {
   content: "";
   position: absolute;
   width: 20px;
   height: 2px;
-  background-color: #ffffff; /* Color del botón */
+  background-color: #ffffff;
   transition: transform 0.3s ease;
   transform-origin: center;
 }
 
 .toggle-cross::before {
-  /* Línea horizontal */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(0deg);
 }
 
 .toggle-cross::after {
-  /* Línea vertical */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(90deg);
 }
 
-/* Estado activo: Equis (X) */
 .toggle-cross.is-active::before {
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .toggle-cross.is-active::after {
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+.auto-grid {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 9rem), 1fr));
 }
