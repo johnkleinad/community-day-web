@@ -16,12 +16,12 @@ export default function ContactUs() {
                         placeholder={'day@awscommunity.mx'}
                     />
                 </a>
-                <a href="tel:+528141278669">
+                <a href="tel:+528131545424">
                     <MainButton
-                        placeholder={'+52 (81) 4127 8669'}
+                        placeholder={'+52 (81) 3154 5424'}
                     />
                 </a>
-                <a href="https://wa.me/528141278669">
+                <a href="https://wa.me/528131545424">
                     <MainButton
                         placeholder={'WhatsApp'}
                     />

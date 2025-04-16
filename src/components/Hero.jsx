@@ -37,7 +37,7 @@ export default function Hero() {
             <div className='flex flex-col gap-8 justify-start'>
                 <div className="flex flex-col gap-4">
                     <h2 className='text-5xl font-black'>Un día inolvidable de <br />
-                        aprendizaje y conexión.
+                        aprendizaje y conexión
                     </h2>
                     <p>
                         Desde ponencias inspiradoras hasta sesiones interactivas y oportunidades para expandir tu red profesional, el <span className='font-bold'>AWS Community Day 2025</span> será un evento único que transformará tu carrera. <span className='font-bold'>¡Este es nuestro tercer año, y estamos más emocionados que nunca de compartirlo contigo! </span>

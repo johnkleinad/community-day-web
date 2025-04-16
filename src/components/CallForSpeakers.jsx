@@ -9,7 +9,7 @@ export default function CallForSpeakers() {
             span={'Sé parte para esta edición'}
             title={'Apúntate como ponente'}
         />
-        <p className='text-2xl font-light'>¡Comparte tu conocimiento en <strong>AWS Community Day México! </strong>
+        <p className='text-2xl font-light'>¡Comparte tu conocimiento en <strong>AWS Community Day México</strong>! 
             ¿Eres experto o experta en AWS, tienes una historia que contar o una solución innovadora para compartir con la comunidad? ¡Queremos escucharte!
             Abre la conversación, lidera el cambio y ayuda a otros profesionales a crecer en el ecosistema de AWS. Envía tu propuesta y sé parte del evento más importante de la comunidad cloud en México.
             ¡Registra tu sesión hoy mismo! La fecha límite de recepción de propuestas es el 4 de mayo.</p>
