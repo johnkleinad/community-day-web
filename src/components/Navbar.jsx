@@ -4,7 +4,7 @@ import UseWindowSize from '../hooks/UseWindowSize';
 export default function Navbar() {
     const { width } = UseWindowSize();
     return <>
-        <nav className='w-full h-[48px] md:h-[68px] bg-gradient from-transparent to-[#173860] sticky top-0 backdrop-blur-md z-10'>
+        <nav className='w-full h-[68px] bg-gradient from-transparent to-[#173860] sticky top-0 backdrop-blur-md z-10'>
             <div className="h-full bg-gradient-to-b from-[#000]/50 to-transparent w-full">
                 <div className="flex justify-between items-center h-full mx-auto container">
                     <div className='text-xl font-bold w-full flex justify-center md:justify-start'>
