@@ -17,7 +17,7 @@ export default function Navbar() {
                                 <a href='#' className='hover:text-gray-300'>Ponentes</a>
                                 <a href='#' className='hover:text-gray-300'>Agenda</a>
                                 <a href='#' className='hover:text-gray-300'>Patrocinadores</a>
-                                <a href='#' className='hover:text-gray-300'>FAQ's</a>
+                                <a href='#' className='hover:text-gray-300'>FAQs</a>
                             </div>
                             <button className="gradient-border">
                                 <div className='bt-content'>Regístrate</div>

@@ -6,7 +6,7 @@ export default function AllyCommunity() {
     return <>
         <div className='flex flex-col gap-16 mx-auto container px-4'>
             <Title
-                span={'Conoce al equipo que hace posible este evento'}
+                span={'Los logros se disfrutan más en colectivo'}
                 title={'Comunidades aliadas'}
             />
             <p className='text-2xl font-light'>¿Te gustaría ser parte de las comunidades aliadas?</p>
